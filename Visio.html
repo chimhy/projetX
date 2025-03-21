@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appel Vidéo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .menu {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").style.display = "block";
+        }
+
+        function startGoogleMeetCall() {
+            // Générer un lien Google Meet
+            let meetLink = "https://meet.google.com/new";
+
+            // Email de l'invité
+            let email = "andrewgoma69@gmail.com";
+            let sujet = encodeURIComponent("Invitation à un appel Google Meet");
+            let message = encodeURIComponent(Bonjour,\n\nCliquez ici pour rejoindre l'appel vidéo : ${meetLink}\n\nÀ bientôt !);
+
+            // Ouvrir Google Meet
+            window.open(meetLink, '_blank');
+
+            // Envoyer l'email avec le lien Meet
+            window.location.href = mailto:${email}?subject=${sujet}&body=${message};
+        }
+
+        function startWhatsAppCall() {
+            let whatsappNumber = "33752720673"; // Numéro sans "+"
+            let whatsappMessage = encodeURIComponent("Salut, on fait un appel vidéo ?");
+            let whatsappLink = https://wa.me/${whatsappNumber}?text=${whatsappMessage};
+
+            // Ouvrir WhatsApp
+            window.open(whatsappLink, '_blank');
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Appel Vidéo</h2>
+
+    <!-- Bouton principal -->
+    <button onclick="toggleMenu()">📞 Appel Vidéo</button>
+
+    <!-- Menu des options d'appel -->
+    <div id="menu" class="menu">
+        <button onclick="startGoogleMeetCall()">📹 Appel Vidéo Google Meet</button>
+        <button onclick="startWhatsAppCall()">📱 Appel Vidéo WhatsApp</button>
+    </div>
+
+</body>
+</html>

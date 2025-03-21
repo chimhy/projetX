@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #60a5fa;
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #60a5fa;
+}
+
+/* CV Container */
+.cv-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Profile Picture */
+.cv-image {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Info */
+.cv-contact {
+    width: 30%;
+    padding: 15px;
+    text-align: left;
+}
+
+.cv-contact h3 {
+    font-size: 1.2rem;
+    color: #60a5fa;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cv-contact p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* CV Content */
+.cv-content {
+    width: 65%;
+    padding: 15px;
+    text-align: left;
+}
+
+/* Sections */
+.cv-section {
+    margin-bottom: 15px;
+}
+
+.cv-section h3 {
+    font-size: 1.5rem;
+    color: #60a5fa;
+    margin-bottom: 5px;
+}
+
+/* Reduce CV Image Size */
+.cv-container img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .cv-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cv-contact, .cv-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cv-image {
+        max-width: 150px;
+    }
+}

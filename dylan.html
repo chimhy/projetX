@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew - Portfolio</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <!-- Burger Menu -->
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <ul class="nav-links">
+        <li><a href="accueil.html">Accueil</a></li>
+        
+    </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Paul-Dylan MWENZE NGOIE KANDOLO</h1>
+  </div>
+
+  <!-- About Section -->
+  <section class="about hidden">
+    <h2>A Propos de moi</h2>
+    <p>
+      Bonjour et bienvenue sur mon portfolio ! Passionné par la cybersécurité, j’ai acquis une solide expérience lors de mon stage chez Google, où j’ai travaillé sur l’analyse des menaces, la sécurisation des systèmes et la gestion des vulnérabilités. Toujours en quête de nouvelles connaissances, je m’intéresse également aux avancées scientifiques et technologiques, que j’explore à travers la littérature. Le voyage occupe aussi une place importante dans ma vie, me permettant de découvrir de nouvelles cultures, d’élargir mes horizons et de nourrir ma curiosité.
+    </p>
+  </section>
+
+  <!-- Portfolio Filter Buttons -->
+  <section class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Tout</button>
+    <button class="filter-btn" data-filter="associative">Passions</button>
+    <button class="filter-btn" data-filter="sport">Activités</button>
+    <button class="filter-btn" data-filter="work">Experiences</button>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio hidden">
+    <h2>MON PORTFOLIO</h2>
+
+    <div class="portfolio-item associative show">
+      <img src="D1.jpg" alt="Activité Associative">
+      <div class="portfolio-text">
+        <h3>PASSIONNE DE LITTÉRATURE
+          SCIENTIFIQUE</h3>
+        <p>Passionné de littérature
+          scientifique, j’aime explorer et
+          analyser des travaux de recherche
+          dans divers domaines. Curieux et
+          rigoureux, je m’intéresse aux
+          avancées technologiques, aux
+          découvertes scientifiques et à leur
+          impact sur notre société. Cette
+          passion me permet d’approfondir
+          mes connaissances, de développer
+          un esprit critique et de rester
+          informé des dernières innovations.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item sport show">
+      <img src="D2.jpg" alt="Passionné de Sport">
+      <div class="portfolio-text">
+        <h3>PASSIONNÉ DE VOYAGE</h3>
+        <p>Passionné de voyage, j’aime
+          découvrir de nouvelles cultures,
+          explorer des paysages uniques et
+          vivre des expériences
+          enrichissantes. Chaque destination
+          est une opportunité
+          d’apprentissage et d’ouverture
+          d’esprit, me permettant de
+          rencontrer des personnes
+          inspirantes et d’élargir ma vision
+          du monde. Voyager est pour moi
+          une source d’aventure, de
+          découverte et de développement
+          personnel.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item work show">
+      <img src="D3.jpg" alt="Travail dans un Chantier">
+      <div class="portfolio-text">
+        <h3>STAGE EN CYBERSÉCURITÉ CHEZ GOOGLE</h3>
+        <p>Lors de mon stage en cybersécurité
+          chez Google, j’ai travaillé sur l’analyse
+          des menaces, la sécurisation des
+          systèmes et la gestion des
+          vulnérabilités. J’ai contribué à
+          l’amélioration des protocoles de
+          sécurité, participé à des audits et
+          exploré des solutions de protection
+          avancées. Cette expérience m’a
+          permis de développer des
+          compétences techniques en
+          cybersécurité, d’approfondir ma
+          compréhension des infrastructures
+          sécurisées et d’évoluer dans un
+          environnement technologique de
+          haut niveau.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume & Contact Buttons -->
+  <section class="buttons">
+    <a href="./pageCVdylanz.html" class="btn">CV</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="tel:+33749503481" class = "btn">Appelez-moi 📞</a>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

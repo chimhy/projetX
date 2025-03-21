@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew - Portfolio</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <!-- Burger Menu -->
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <ul class="nav-links">
+        <li><a href="accueil.html">Accueil</a></li>
+        
+    </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>MONKA Benaja</h1>
+  </div>
+
+  <!-- About Section -->
+  <section class="about hidden">
+    <h2>A Propos de moi</h2>
+    <p>
+      Bonjour et bienvenue sur mon portfolio ! Passionné par l’informatique et la cybersécurité, j’analyse les menaces, protège les systèmes et développe des solutions de sécurité adaptées aux défis actuels. Curieux et rigoureux, j’aime explorer les nouvelles technologies, approfondir mes compétences en gestion des vulnérabilités et en audit de sécurité, tout en m’adaptant aux évolutions du numérique.
+    </p>
+  </section>
+
+  <!-- Portfolio Filter Buttons -->
+  <section class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Tout</button>
+    <button class="filter-btn" data-filter="associative">Activités</button>
+    <button class="filter-btn" data-filter="sport">Passions</button>
+    <button class="filter-btn" data-filter="work">Expériences</button>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio hidden">
+    <h2>MON PORTFOLIO</h2>
+
+    <div class="portfolio-item associative show">
+      <img src="B2.jpg" alt="Activité Associative">
+      <div class="portfolio-text">
+        <h3>PASSIONNÉ DE BASKETBALL</h3>
+        <p>Amateur de basket-ball, j’aime
+            suivre les matchs, analyser les
+            stratégies de jeu et pratiquer ce
+            sport qui allie technique, intensité
+            et esprit d’équipe. Passionné par
+            l’univers du basket, je m’intéresse
+            aux performances des joueurs, aux
+            grandes compétitions et à l’
+            évolution du jeu. Ce sport me
+            motive par ses valeurs de
+            dépassement de soi, de discipline
+            et de collectif..</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item sport show">
+      <img src="B3.jpg" alt="Passionné de Sport">
+      <div class="portfolio-text">
+        <h3>PASSIONNÉ DE LITTÉRATURE DE
+            SCIENCE-FICTION</h3>
+        <p>Passionné de littérature
+            scientifique, j’aime explorer et
+            analyser des travaux de recherche
+            dans divers domaines. Curieux et
+            rigoureux, je m’intéresse aux
+            avancées technologiques, aux
+            découvertes scientifiques et à leur
+            impact sur notre société. Cette
+            passion me permet d’approfondir
+            mes connaissances, de développer
+            un esprit critique et de rester
+            informé des dernières innovations.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item work show">
+      <img src="B1.jpg" alt="Travail dans un Chantier">
+      <div class="portfolio-text">
+        <h3>ALTERNANT EN CYBERSÉCURITÉ.</h3>
+        <p>En tant qu'alternant en
+            cybersécurité, je travaille sur
+            l’analyse des menaces, la
+            protection des systèmes et la mise
+            en place de solutions de sécurité.
+            J’acquiers une expérience concrète
+            en gestion des vulnérabilités, en
+            audit de sécurité et en réponse aux
+            incidents. Cette immersion en
+            entreprise me permet de
+            développer mes compétences
+            techniques tout en m’adaptant aux
+            défis réels de la cybersécurité.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume & Contact Buttons -->
+  <section class="buttons">
+    <a href="./pageCVbenz.html" class="btn">CV</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="tel:+33779995155" class = "btn">Appelez-moi 📞</a>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

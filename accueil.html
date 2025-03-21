@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine Collaborative</title>
+  <link rel="stylesheet" href="acceuil.css">
+  <link rel="stylesheet" href="burger.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="script.js">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Burger Menu -->
+  <header>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()"></div>
+      <ul class="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          
+      </ul>
+  </nav>       
+  </header>
+
+  <!-- Page Title -->
+  <headers>
+    <h1>Bienvenue sur notre page collaborative !</h1>
+    <p>Découvrez nos parcours, nos projets et nos talents.</p>
+  </headers>
+
+  <!-- Profiles Section -->
+  <section class="profiles">
+    <div class="profile-card">
+      <img src="MP.jpg" alt="Photo 1">
+      <h3><a href="murphy.html">Murphy</a></h3>
+    </div>
+
+    <div class="profile-card">
+      <img src="DP.jpg" alt="Photo 2">
+      <h3><a href="dylan.html">Dylan</a></h3>
+    </div>
+
+    <div class="profile-card">
+      <img src="BP.jpg" alt="Photo 3">
+      <h3><a href="benaja.html">Benaja</a></h3>
+    </div>
+
+    <div class="profile-card">
+      <img src="AP.jpg" alt="Photo 4">
+      <h3><a href="andrew.html">Andrew</a></h3>
+    </div>
+  </section>
+
+   <div class="btn">
+    <a href="https://calendar.app.google/bDgQot5dQz7MTzY26
+    " target="_blank">
+         <p> Réserver un rendez-vous Google Meet</p> 
+        </button>
+      </a>
+   </div>
+  
+
+  <script src="script.js"></script>
+
+  <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Portfolio Filtering
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const category = button.getAttribute("data-filter");
+
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      portfolioItems.forEach((item) => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.classList.add("show");
+        } else {
+          item.classList.remove("show");
+        }
+      });
+    });
+  });
+
+  // Scroll Animation: Fade in Sections on Scroll
+  const sections = document.querySelectorAll(".hidden");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
+
+
+  </script>
+
+
+</body>
+</html>
